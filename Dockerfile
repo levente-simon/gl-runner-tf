@@ -13,5 +13,5 @@ WORKDIR /
 COPY bin/gitlab-terraform.sh /usr/bin/gitlab-terraform
 RUN chmod +x /usr/bin/gitlab-terraform
 
-COPY etc/*.crt /usr/local/share/ca-certificates
+COPY etc/*.crt /usr/local/share/ca-certificates/
 RUN update-ca-certificates
